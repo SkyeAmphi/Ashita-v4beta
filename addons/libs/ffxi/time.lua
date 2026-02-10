@@ -44,7 +44,7 @@ ffi.cdef[[
     typedef uint32_t    (__stdcall* ntGameTimeFunc_f)(uint32_t);
     typedef uint32_t    (__stdcall* xiGetTime_f)(void);
     typedef const char* (__stdcall* YkGetTimeString_f)(uint32_t, uint8_t);
-    typedef tm*         (__cdecl*   sqLocalTime_f)(uint32_t);
+    typedef tm_t*       (__cdecl*   sqLocalTime_f)(uint32_t);
 ]];
 
 local timelib = T{
